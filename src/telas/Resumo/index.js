@@ -10,11 +10,11 @@ import { ProdutosContext } from '../../contexts/ProdutosContext';
 
 export default function Resumo({ navigation }) {
 
-  const { temaEscolhido } = useContext(TemaContext)
+  const { temas } = useContext(TemaContext)
   const { usuario } = useContext(AutenticacaoContext)
   const { quantidade, carrinho } = useContext(ProdutosContext)
 
-  const estilo = estilos(temaEscolhido)
+  const estilo = estilos(temas)
 
   return (
     <View style={estilo.container}>

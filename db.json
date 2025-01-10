@@ -1,0 +1,16 @@
+{
+  "produtos": [
+    {
+      "id": "d9b5",
+      "imagem": 6,
+      "texto": "Cadeira de trabalho",
+      "preco": 150
+    },
+    {
+      "id": "9cf2",
+      "imagem": 7,
+      "texto": "Sofá confortavel",
+      "preco": 250
+    }
+  ]
+}

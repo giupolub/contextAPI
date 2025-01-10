@@ -9,7 +9,7 @@ export default function Login({ navigation }) {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
 
-  const { temaEscolhido } = useContext(TemaContext)
+  const { temas } = useContext(TemaContext)
   const { login } = useContext(AutenticacaoContext)
 
   function logandoNoSistema() {
@@ -22,7 +22,7 @@ export default function Login({ navigation }) {
     }
   }
 
-  const estilo = estilos(temaEscolhido)
+  const estilo = estilos(temas)
 
   return (
     <View style={estilo.container}>

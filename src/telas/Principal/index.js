@@ -11,11 +11,11 @@ import { ProdutosContext } from '../../contexts/ProdutosContext';
 
 export default function Principal({ navigation }) {
 
-  const { temaEscolhido } = useContext(TemaContext)
+  const { temas } = useContext(TemaContext)
   const { usuario } = useContext(AutenticacaoContext)
   const { quantidade, ultimosVistos } = useContext(ProdutosContext)
 
-  const estilo = estilos(temaEscolhido)
+  const estilo = estilos(temas)
 
   return (
     <View style={estilo.container}>
